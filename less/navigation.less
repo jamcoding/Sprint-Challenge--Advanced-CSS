@@ -1,1 +1,26 @@
 // Navigation code here
+.navigation {
+    width: 100%;
+    background-color: #f4f4f4
+}
+
+nav {
+    display: flex;
+    width: 800px;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    & a:first-child {
+        width: 100%;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: @ebony-clay;
+        padding: 10px 15px;
+        font-size: 1.5rem;
+    }
+}

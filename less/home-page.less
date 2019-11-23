@@ -1,6 +1,9 @@
 // Home Content
-
 .home {
+
+  .header-image {
+    border-radius: 10px;
+  }
 
   .intro {
 
@@ -58,6 +61,13 @@
       }
 
       .btn {
+        text-align: center;
+        width: 25%;
+
+        &:hover {
+          .button(@ebony-clay, transparent, @ebony-clay, 1.6rem);
+          box-shadow: 0px 0px 3px @ebony-clay;
+      }
       }
     }
 
