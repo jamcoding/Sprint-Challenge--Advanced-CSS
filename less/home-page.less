@@ -3,6 +3,7 @@
 
   .header-image {
     border-radius: 10px;
+    width: 100%;
   }
 
   .intro {
@@ -27,6 +28,16 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 100%;
+      }
+    }
+
+    img.sky, img.launch {
+      @media @phone {
+        display: none;
+      }
     }
   }
 
@@ -48,6 +59,13 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
+    @media @phone {
+      margin: 0;
+      width: 100%;
+      padding: 25px 0;
+    }
 
     .walk-text {
       width: 50%;
@@ -67,13 +85,27 @@
         &:hover {
           .button(@ebony-clay, transparent, @ebony-clay, 1.6rem);
           box-shadow: 0px 0px 3px @ebony-clay;
+        }
+
+        @media @phone {
+          width: 100%;
+        }
       }
+
+      @media @phone {
+        width: 100%;
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        order: -1;
+        margin: 0 0 10px;
+      }
       
       img {
         width: 100%;

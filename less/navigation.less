@@ -1,7 +1,13 @@
 // Navigation code here
 .navigation {
+    display: flex;
     width: 100%;
-    background-color: #f4f4f4
+    background-color: @wild-sand;
+
+    @media @phone {
+        width: 95%;
+        margin: auto;
+    }
 }
 
 nav {
@@ -12,14 +18,19 @@ nav {
     flex-wrap: wrap;
     flex-direction: row;
 
+    @media @phone {
+        width: 100%;
+    }
+
     & a:first-child {
         width: 100%;
         text-align: center;
+        color: @ebony-clay;
     }
 
     a {
         text-decoration: none;
-        color: @ebony-clay;
+        color: @river-bend;
         padding: 10px 15px;
         font-size: 1.5rem;
     }
