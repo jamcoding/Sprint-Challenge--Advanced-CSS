@@ -168,6 +168,7 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 87px;
 }
 @media (max-width: 500px) {
   .container {
@@ -178,12 +179,8 @@ p {
   display: flex;
   width: 100%;
   background-color: #F6F6F6;
-}
-@media (max-width: 500px) {
-  .navigation {
-    width: 95%;
-    margin: auto;
-  }
+  position: fixed;
+  opacity: 0.9;
 }
 nav {
   display: flex;
@@ -219,15 +216,15 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .header-image {
-  border-radius: 10px;
-  width: 100%;
-}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 10px;
+  width: 100%;
 }
 .home .space-images {
   display: flex;
