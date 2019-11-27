@@ -181,6 +181,7 @@ p {
   background-color: #F6F6F6;
   position: fixed;
   opacity: 0.9;
+  box-shadow: 0px 0px 10px #5E6164;
 }
 nav {
   display: flex;
@@ -236,6 +237,7 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+  box-shadow: 0px 0px 6px #23293B;
 }
 @media (max-width: 500px) {
   .home .space-images img {
@@ -319,4 +321,5 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  box-shadow: 0px 0px 6px #23293B;
 }
